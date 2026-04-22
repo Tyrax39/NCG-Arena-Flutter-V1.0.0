@@ -1,0 +1,39 @@
+# Flutter and Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
+.packages
+.pub/
+build/
+coverage/
+pubspec_overrides.yaml
+
+# IDE and OS files
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Local logs and generated outputs
+*.log
+build_android*.log
+
+# Local mobile config and signing files
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+lib/firebase_options.dart
+android/key.properties
+**/*.jks
+**/*.keystore
+**/*.p12
+**/*.mobileprovision
+
+# Generated platform files
+android/app/.cxx/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+ios/Flutter/flutter_export_environment.sh
+**/xcuserdata/
+**/*.xcuserstate
