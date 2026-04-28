@@ -86,3 +86,11 @@ jobs:
 
       - name: Build Android debug APK
         run: flutter build apk --debug
+
+      - name: Free runner disk space
+        if: always()
+        run: |
+          rm -rf build
+          rm -rf android/.gradle
+          rm -rf "$HOME/.gradle/caches"
+          df -h
