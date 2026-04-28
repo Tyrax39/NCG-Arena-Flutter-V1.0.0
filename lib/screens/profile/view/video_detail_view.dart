@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:neoncave_arena/Theme/colors.dart';
+import 'package:neoncave_arena/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 

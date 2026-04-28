@@ -1,6 +1,6 @@
 import 'package:neoncave_arena/common/flushbar.dart';
 import 'package:neoncave_arena/common/snackbar_message.dart';
-import 'package:neoncave_arena/Theme/colors.dart';
+import 'package:neoncave_arena/theme/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart' as flutter_widgets;
 

@@ -1,5 +1,5 @@
 import 'package:neoncave_arena/DB/shared_preference_helper.dart';
-import 'package:neoncave_arena/Theme/colors.dart';
+import 'package:neoncave_arena/theme/colors.dart';
 import 'package:neoncave_arena/backend/server_response.dart';
 import 'package:neoncave_arena/backend/shared_web_service.dart';
 import 'package:neoncave_arena/utils/loader.dart';
