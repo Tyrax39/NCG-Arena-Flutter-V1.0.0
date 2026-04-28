@@ -14,14 +14,14 @@ class TeamCreateViewModel extends ChangeNotifier {
   bool isLoading = false;
   String selectedUserId = '';
 
-  /// ✅ Select User & Highlight Tile
+  /// Select User & Highlight Tile
   void selectUser(String userId) {
     selectedUserId = userId;
     notifyListeners();
   }
 
   Future<void> addPlayerInTeam(BuildContext context, String teamId) async {
-    if (selectedUserId == null) return;
+    if (selectedUserId.isEmpty) return;
 
     isLoading = true;
     notifyListeners();
@@ -29,7 +29,7 @@ class TeamCreateViewModel extends ChangeNotifier {
     try {
       final response = await sharedWebService.addPlayer(
         teamId: teamId,
-        userId: selectedUserId!,
+        userId: selectedUserId,
       );
 
       if (response.status == 200) {
@@ -87,7 +87,7 @@ class TeamCreateViewModel extends ChangeNotifier {
       final searchText = searchQuery.trim(); // Trim spaces from user input
 
       if (searchText.isEmpty) return; // Prevent empty searches
-      hasSearched = true; // ✅ Mark search as performed
+      hasSearched = true;
       notifyListeners();
       
       final response =
@@ -98,7 +98,7 @@ class TeamCreateViewModel extends ChangeNotifier {
         notifyListeners();
       }
     } catch (e) {
-      print('Search API Error: $e');
+      debugPrint('Search API Error: $e');
     } finally {
       isLoading = false;
       notifyListeners();
