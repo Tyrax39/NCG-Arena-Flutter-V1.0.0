@@ -1,5 +1,5 @@
 import 'package:neoncave_arena/DB/shared_preference_helper.dart';
-import 'package:neoncave_arena/Routes/app_routes.dart';
+import 'package:neoncave_arena/routes/app_routes.dart';
 import 'package:neoncave_arena/backend/shared_web_service.dart';
 import 'package:neoncave_arena/localization/keys/codegen_loader.g.dart';
 import 'package:easy_localization/easy_localization.dart';

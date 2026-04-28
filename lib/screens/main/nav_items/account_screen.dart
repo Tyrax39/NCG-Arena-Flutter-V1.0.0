@@ -13,9 +13,9 @@ import 'package:neoncave_arena/screens/account/components/account_tile.dart';
 import 'package:neoncave_arena/theme/colors.dart';
 import 'package:neoncave_arena/localization/keys/codegen_loader.g.dart';
 import 'package:provider/provider.dart';
-import 'package:neoncave_arena/screens/Account/view/privacy_policy_screen.dart';
-import 'package:neoncave_arena/screens/Account/view/terms_of_service_screen.dart';
-import 'package:neoncave_arena/screens/Account/view/aboutUs.dart';
+import 'package:neoncave_arena/screens/account/view/privacy_policy_screen.dart';
+import 'package:neoncave_arena/screens/account/view/terms_of_service_screen.dart';
+import 'package:neoncave_arena/screens/account/view/aboutUs.dart';
 
 class AccountScreen extends StatefulWidget {
   static const String key_title = "/account_navigation_screen";

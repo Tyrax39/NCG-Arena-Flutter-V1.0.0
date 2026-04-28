@@ -10,7 +10,7 @@ import 'package:neoncave_arena/routes/app_routes.dart';
 import 'package:neoncave_arena/theme/colors.dart';
 import 'package:neoncave_arena/localization/keys/codegen_loader.g.dart';
 import 'package:provider/provider.dart';
-import '../../Components/profile_success_popup.dart';
+import '../../components/profile_success_popup.dart';
 
 class SelectOrganization extends StatefulWidget {
   const SelectOrganization({super.key});

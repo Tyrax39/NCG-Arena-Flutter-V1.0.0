@@ -4,7 +4,7 @@ import 'package:neoncave_arena/constant/app_config.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:neoncave_arena/common/app_text_view.dart';
-import 'package:neoncave_arena/Routes/app_routes.dart';
+import 'package:neoncave_arena/routes/app_routes.dart';
 import 'package:neoncave_arena/theme/colors.dart';
 
 class ProfileSuccessPopup extends StatefulWidget {

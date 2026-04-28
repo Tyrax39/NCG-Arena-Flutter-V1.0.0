@@ -1,7 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors
 
 import 'package:neoncave_arena/common/primary_button.dart';
-import 'package:neoncave_arena/Routes/app_routes.dart';
+import 'package:neoncave_arena/routes/app_routes.dart';
 import 'package:neoncave_arena/localization/keys/codegen_loader.g.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';

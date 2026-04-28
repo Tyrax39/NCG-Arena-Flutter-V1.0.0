@@ -4,7 +4,7 @@ import 'package:neoncave_arena/common/date_time_picker.dart';
 import 'package:neoncave_arena/common/image_picker_handler.dart';
 import 'package:neoncave_arena/common/material_dialouge_content.dart';
 import 'package:neoncave_arena/common/snackbar_message.dart';
-import 'package:neoncave_arena/Routes/app_routes.dart';
+import 'package:neoncave_arena/routes/app_routes.dart';
 import 'package:neoncave_arena/screens/create_profile/view_model/create_profile_view_model.dart';
 import 'package:neoncave_arena/utils/dialogue_helper.dart';
 import 'package:neoncave_arena/utils/snakbar_helper.dart';

@@ -1,4 +1,4 @@
-import 'package:neoncave_arena/Routes/app_routes.dart';
+import 'package:neoncave_arena/routes/app_routes.dart';
 import 'package:neoncave_arena/common/app_bar.dart';
 import 'package:neoncave_arena/common/material_dialouge_content.dart';
 import 'package:neoncave_arena/common/snackbar_message.dart';

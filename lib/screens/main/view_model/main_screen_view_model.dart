@@ -1,7 +1,7 @@
 import 'package:neoncave_arena/DB/shared_preference_helper.dart';
-import 'package:neoncave_arena/Screens/main/nav_items/account_screen.dart';
-import 'package:neoncave_arena/Screens/main/nav_items/discover_screen.dart';
-import 'package:neoncave_arena/Screens/main/nav_items/home_screen.dart';
+import 'package:neoncave_arena/screens/main/nav_items/account_screen.dart';
+import 'package:neoncave_arena/screens/main/nav_items/discover_screen.dart';
+import 'package:neoncave_arena/screens/main/nav_items/home_screen.dart';
 import 'package:neoncave_arena/screens/main/nav_items/leader_board.dart';
 import 'package:neoncave_arena/backend/server_response.dart';
 import 'package:neoncave_arena/backend/shared_web_service.dart';
