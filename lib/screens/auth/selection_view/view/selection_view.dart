@@ -7,6 +7,7 @@ import 'package:neoncave_arena/constant/app_config.dart';
 import 'package:neoncave_arena/screens/auth/selection_view/view_model/selection_view_model.dart';
 import 'package:neoncave_arena/utils/dialogue_helper.dart';
 import 'package:neoncave_arena/utils/firebase_runtime.dart';
+import 'package:neoncave_arena/utils/google_auth_helper.dart';
 import 'package:neoncave_arena/utils/snakbar_helper.dart';
 import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -17,7 +18,6 @@ import 'package:neoncave_arena/routes/app_routes.dart';
 import 'package:neoncave_arena/theme/colors.dart';
 import 'package:neoncave_arena/localization/keys/codegen_loader.g.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
-import 'package:google_sign_in/google_sign_in.dart';
 import 'package:provider/provider.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
@@ -317,14 +317,14 @@ class _SelectionViewState extends State<SelectionView> {
                       return;
                     }
 
-                    GoogleSignIn _googleSignIn = GoogleSignIn();
                     try {
-                      var result = await _googleSignIn.signIn();
+                      final result = await GoogleAuthHelper.authenticate();
                       debugPrint(result.toString());
                       if (result != null) {
-                        final googleAuth = await result.authentication;
+                        final googleAuth = result.authentication;
+                        if (googleAuth.idToken == null) return;
+
                         final credential = GoogleAuthProvider.credential(
-                          accessToken: googleAuth.accessToken,
                           idToken: googleAuth.idToken,
                         );
                         final authResult = await FirebaseAuth.instance

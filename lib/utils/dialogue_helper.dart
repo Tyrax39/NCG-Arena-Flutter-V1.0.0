@@ -12,7 +12,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart' as flutter_widgets;
-import 'package:google_sign_in/google_sign_in.dart';
+import 'package:neoncave_arena/utils/google_auth_helper.dart';
 
 class DialogHelper {
   static DialogHelper? _instance;
@@ -310,7 +310,7 @@ class DialogHelper {
                       child: PrimaryBTN(
                           height: 40,
                           callback: () async {
-                            await GoogleSignIn().signOut();
+                            await GoogleAuthHelper.signOut();
                             await FirebaseAuth.instance.signOut();
                             Navigator.pop(context);
                             positiveClosure.call();
@@ -539,9 +539,4 @@ class DialogHelper {
       },
     );
   }
-
-
-
-
-
 }
