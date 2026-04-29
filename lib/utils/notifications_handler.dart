@@ -24,11 +24,12 @@ class NotificationServices {
     var initializationSetting = InitializationSettings(
         android: androidInitializationSettings, iOS: iosInitializationSettings);
 
-    await _flutterLocalNotificationsPlugin.initialize(initializationSetting,
+    await _flutterLocalNotificationsPlugin.initialize(
+        settings: initializationSetting,
         onDidReceiveNotificationResponse: (payload) {
-      // handle interaction when app is active for android
-      handleMessage(message, context);
-    });
+          // handle interaction when app is active for android
+          handleMessage(message, context);
+        });
   }
 
   clearPreviousNotification() {
@@ -110,10 +111,10 @@ class NotificationServices {
 
     Future.delayed(Duration.zero, () {
       _flutterLocalNotificationsPlugin.show(
-        0,
-        message.notification!.title.toString(),
-        message.notification!.body.toString(),
-        notificationDetails,
+        id: 0,
+        title: message.notification!.title.toString(),
+        body: message.notification!.body.toString(),
+        notificationDetails: notificationDetails,
       );
     });
   }
